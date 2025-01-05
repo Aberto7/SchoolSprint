@@ -21,7 +21,7 @@ public class Eat : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        GameManager.gamemanager._playerHealth.Healunit(20);
+        GameManager.gamemanager._playerHealth.Healunit(30);
         _healthbar.SetHealth(GameManager.gamemanager._playerHealth.Health);
         Destroy(transform.parent.gameObject);
     }
