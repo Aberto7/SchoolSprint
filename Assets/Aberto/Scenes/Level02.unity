@@ -17907,6 +17907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 470721232}
+  sceneNumber: 1
 --- !u!4 &1306676162
 Transform:
   m_ObjectHideFlags: 0
