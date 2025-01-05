@@ -12,8 +12,10 @@ public class Playerbehave : MonoBehaviour
     private float damageTimer = 0.0f; // Timer to track intervals
     public GameManagerScript gameManager;
 
+#pragma warning disable IDE0052 // Remove unread private members
     private bool isDead;
-   
+#pragma warning restore IDE0052 // Remove unread private members
+
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift))
