@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
-{
+{ 
     public Camera playerCamera;
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
@@ -17,6 +18,7 @@ public class Movement : MonoBehaviour
     public float crouchSpeed = 3f;
     
 
+
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
@@ -26,9 +28,9 @@ public class Movement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        
+        // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
+       
     }
 
     void Update()
@@ -81,5 +83,7 @@ public class Movement : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+       
+
     }
 }
